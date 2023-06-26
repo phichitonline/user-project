@@ -49,33 +49,6 @@
 
         </script>
 
-<script>
-
-    async function main() {
-        liff.ready.then(() => {
-            if (liff.isLoggedIn()) {
-                getUserProfile()
-            } else {
-                liff.login()
-            }
-        })
-        await liff.init({ liffId: "1654103357-R6WV3eWM" })
-    }
-    main()
-
-    async function getUserProfile() {
-        const profile = await liff.getProfile()
-        document.getElementById("pictureUrl").src = profile.pictureUrl
-        document.getElementById("displayName").append(profile.displayName)
-        document.getElementById("userId").append(profile.userId)
-        document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-        $('#displayName').val(profile.displayName);
-        $('#userId').val(profile.userId);
-        $('#decodedIDToken2').val(liff.getDecodedIDToken().email);
-    }
-
-</script>
-
         @yield('footer_script')
 
         <script type="text/javascript" src="{{ asset('scripts/jquery.js') }}"></script>
