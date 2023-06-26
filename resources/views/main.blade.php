@@ -27,8 +27,9 @@
                     <p class="font-11 mb-0"><b>Email:</b> email</p>
                     <p class="font-11 mb-0"><b>โทรศัพท์:</b> tel</p>
                 </div>
+                <img class="preload-img img-fluid rounded-circle pl-3 pr-3" id="pictureUrl" width="180">
                 {{-- <img id="pictureUrl" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
-                <img src="images/pictures/0t.jpg" width="115" class="rounded-circle mt-3 shadow-xl preload-img">
+                {{-- <img src="images/pictures/0t.jpg" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
             </div>
 
             <div class="divider mt-4 mb-4"></div>
@@ -104,5 +105,29 @@
 @endsection
 
 @section('footer_script')
+
+
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
+<script>
+
+    async function main() {
+        liff.ready.then(() => {
+            if (liff.isLoggedIn()) {
+                getUserProfile()
+            } else {
+                liff.login()
+            }
+        })
+        await liff.init({ liffId: "1654103357-R6WV3eWM" })
+    }
+    main()
+
+    async function getUserProfile() {
+        const profile = await liff.getProfile()
+        document.getElementById("pictureUrl").src = profile.pictureUrl
+    }
+
+</script>
 
 @endsection
