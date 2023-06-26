@@ -68,7 +68,7 @@
                 liff.login()
             }
         })
-        await liff.init({ liffId: "1654103357-WrQVm8QB" })
+        await liff.init({ liffId: "1654103357-R6WV3eWM" })
     }
     main()
 
