@@ -50,6 +50,7 @@ class MainController extends Controller
             $entryposition = "";
             $groupname = "";
         }
+        
         return view($view_page, [
             'moduletitle' => "Main",
             'username' => $username,
