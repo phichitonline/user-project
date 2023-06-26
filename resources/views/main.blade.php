@@ -108,18 +108,6 @@
 
 <script>
 
-    async function main() {
-        liff.ready.then(() => {
-            if (liff.isLoggedIn()) {
-                getUserProfile()
-            } else {
-                liff.login()
-            }
-        })
-        await liff.init({ liffId: "1654103357-R6WV3eWM" })
-    }
-    main()
-
     async function getUserProfile() {
         const profile = await liff.getProfile()
         document.getElementById("pictureUrl").src = profile.pictureUrl
