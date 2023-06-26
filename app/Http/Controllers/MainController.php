@@ -22,7 +22,7 @@ class MainController extends Controller
             FROM doctor d
             LEFT JOIN doctor_position dp ON d.position_id = dp.id
             LEFT JOIN provider_type pt ON d.provider_type_code = pt.provider_type_code
-            WHERE d.active = "Y" AND d.cid = "'.$username.'"
+            WHERE d.active = "Y" AND CONCAT(UPPER(md5(d.cid)),":",SUBSTR(d.cid,1,1),SUBSTR(d.cid,-1)) = "'.$username.'"
             ');
             foreach($check_opduser as $data){
                 if ($data->user_active > 0) {
@@ -50,7 +50,7 @@ class MainController extends Controller
             $entryposition = "";
             $groupname = "";
         }
-        
+
         return view($view_page, [
             'moduletitle' => "Main",
             'username' => $username,
