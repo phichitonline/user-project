@@ -108,6 +108,11 @@
 
 <script>
 
+    async function main() {
+        await liff.init({ liffId: "1654103357-R6WV3eWM" })
+    }
+    main()
+
     async function getUserProfile() {
         const profile = await liff.getProfile()
         document.getElementById("pictureUrl").src = profile.pictureUrl
