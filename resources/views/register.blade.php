@@ -21,7 +21,7 @@
                 <i class="input-icon fa fa-user color-theme"></i>
                 <span>เลขบัตรประชาชน</span>
                 <em>(required)</em>
-                <input type="number" name="username" placeholder="ตรวจสอบเลขบัตรประชาชน" required autofocus>
+                <input type="number" name="cid" placeholder="ตรวจสอบเลขบัตรประชาชน" required autofocus>
                 <input type="hidden" name="lineid" value="{{ $userid ?? '' }}">
             </div>
             <div class="input-style has-icon input-style-1 input-required">

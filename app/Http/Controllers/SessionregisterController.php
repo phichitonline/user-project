@@ -31,7 +31,9 @@ class SessionregisterController extends Controller
      */
     public function store(Request $request, smartuser $model)
     {
-        $username = $request->get('username');
+        $cid = $request->get('cid');
+        $cid_encode = strtoupper(md5($request->get('cid'))).":".substr($request->get('cid'),0,1).substr($request->get('cid'),-1);
+
         $bdate = $request->get('password');
         $dd = substr($bdate,0,2);
         $mm = substr($bdate,2,2);
@@ -41,7 +43,7 @@ class SessionregisterController extends Controller
 
         $check_opduser = DB::connection('mysql_hos')->select('
         SELECT COUNT(*) AS userregist,cid FROM doctor
-        WHERE active = "Y" AND cid = "'.$username.'" AND birth_date = "'.$birthday.'"
+        WHERE active = "Y" AND cid = "'.$cid.'" AND birth_date = "'.$birthday.'"
         ');
         foreach($check_opduser as $data){
             if ($data->userregist > 0) {
@@ -52,7 +54,7 @@ class SessionregisterController extends Controller
                 $_SESSION["useremail"] = $request->get('email');
                 $_SESSION["tel"] = $request->get('tel');
                 session_write_close();
-                $model->create($request->merge(['password' => Hash::make($request->get('password'))])->all());
+                $model->create($request->merge(['username' => $cid_encode, 'password' => Hash::make($request->get('password'))])->all());
                 return redirect()->route('main')->with('session-alert', 'คุณลงทะเบียนเจ้าหน้าที่เรียบร้อยแล้ว');
             } else {
                 return redirect()->route('home')->with('session-alert', 'เลขบัตรประชาชนหรือวันเกิดไม่ถูกต้อง');
