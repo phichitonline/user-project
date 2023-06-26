@@ -22,8 +22,6 @@
             <div class="d-flex content mb-1">
                 <div class="flex-grow-1">
                     <h1 class="font-700">{{ $pname }}</h1>
-
-                    <p class="font-11 mt-2 mb-2"><b>ตำแหน่ง:</b> {{ $entryposition }}</p>
                     <p class="font-11 mb-0"><b>Email:</b> {{ $email }}</p>
                     <p class="font-11 mb-0"><b>โทรศัพท์:</b> {{ $tel }}</p>
                 </div>

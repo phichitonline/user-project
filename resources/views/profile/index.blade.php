@@ -6,7 +6,13 @@
 
 @section('content')
 
-            <div class="page-content header-clear-small">
+<div class="header header-fixed header-logo-center bg-red2-dark">
+    <a href="#" class="header-title color-white">{{ $moduletitle }}</a>
+    <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-times"></i></a>
+    <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+</div>
+
+    <div class="page-content header-clear-large">
 
             @if (session('session-alert'))
                 <div class="footer card card-style">
@@ -22,11 +28,11 @@
                     <div class="d-flex content mb-1">
                         <div class="flex-grow-1">
                             <h1 class="font-700">{{ $pname }}</h1>
-
-                            <p class="font-11 mt-2 mb-2"><b>ตำแหน่ง:</b> {{ $entryposition }}</p>
-                            <p class="font-11 mt-2 mb-2"><b>Provider:</b> {{ $groupname }}</p>
                             <p class="font-11 mb-0"><b>Email:</b> {{ $email }}</p>
                             <p class="font-11 mb-0"><b>โทรศัพท์:</b> {{ $tel }}</p>
+
+                            <p class="font-11 mb-0"><b>ตำแหน่ง:</b> {{ $entryposition }}</p>
+                            <p class="font-11 mb-0"><b>Provider:</b> {{ $groupname }}</p>
                         </div>
                         {{-- <img id="pictureUrl" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
                         {{-- <img src="images/pictures/0t.jpg" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
@@ -34,9 +40,10 @@
 
                     <div class="divider mt-4 mb-4"></div>
 
-                    <div class="row mr-2 ml-2 mb-0">
-<h1>Profile</h1>
+                    <div class="d-flex content mb-1">
+                        {{-- <h1>Profile</h1> --}}
                     </div>
+
                 </div>
 
             </div>
