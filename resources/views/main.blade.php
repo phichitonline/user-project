@@ -27,7 +27,7 @@
                     <p class="font-11 mb-0"><b>Email:</b> {{ $email }}</p>
                     <p class="font-11 mb-0"><b>โทรศัพท์:</b> {{ $tel }}</p>
                 </div>
-                <img id="pictureUrl" width="115" class="rounded-circle mt-3 shadow-xl preload-img">
+                {{-- <img id="pictureUrl" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
                 {{-- <img src="images/pictures/0t.jpg" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
             </div>
 
@@ -104,32 +104,5 @@
 @endsection
 
 @section('footer_script')
-
-<script>
-
-    async function main() {
-        liff.ready.then(() => {
-            if (liff.isLoggedIn()) {
-                getUserProfile()
-            } else {
-                liff.login()
-            }
-        })
-        await liff.init({ liffId: "1654103357-R6WV3eWM" })
-    }
-    main()
-    
-    async function getUserProfile() {
-        const profile = await liff.getProfile()
-        document.getElementById("pictureUrl").src = profile.pictureUrl
-        document.getElementById("displayName").append(profile.displayName)
-        document.getElementById("userId").append(profile.userId)
-        document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-        $('#displayName').val(profile.displayName);
-        $('#userId').val(profile.userId);
-        $('#decodedIDToken2').val(liff.getDecodedIDToken().email);
-    }
-
-</script>
 
 @endsection
