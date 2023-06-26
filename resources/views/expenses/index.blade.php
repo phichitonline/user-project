@@ -6,7 +6,13 @@
 
 @section('content')
 
-            <div class="page-content header-clear-small">
+<div class="header header-fixed header-logo-center bg-red2-dark">
+    <a href="#" class="header-title color-white">{{ $moduletitle }}</a>
+    <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-times"></i></a>
+    <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+</div>
+
+    <div class="page-content header-clear-large">
 
             @if (session('session-alert'))
                 <div class="footer card card-style">

@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="header header-fixed header-logo-center bg-red2-dark">
+<div class="header header-fixed header-logo-center bg-blue2-dark">
     <a href="#" class="header-title color-white">{{ $moduletitle }}</a>
     <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-times"></i></a>
     <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
@@ -38,11 +38,11 @@
                         {{-- <img src="images/pictures/0t.jpg" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
                     </div>
 
-                    <div class="divider mt-4 mb-4"></div>
+                    {{-- <div class="divider mt-4 mb-4"></div>
 
                     <div class="d-flex content mb-1">
-                        {{-- <h1>Profile</h1> --}}
-                    </div>
+                        <h1>Profile</h1>
+                    </div> --}}
 
                 </div>
 

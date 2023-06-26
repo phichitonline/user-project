@@ -16,7 +16,7 @@ class SlipController extends Controller
         $slip_list = slip::where('ofid','501-2')->get();
 
         return view('slip.index', [
-            'moduletitle' => "slip",
+            'moduletitle' => "Slip",
             'slip_list' => $slip_list,
         ]);
     }
