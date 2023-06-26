@@ -19,7 +19,7 @@
 
         <div class="card card-style">
 
-            <div class="d-flex content mb-1">
+            <div class="card-header bg-blue1-dark">
                 <div class="flex-grow-1">
                     <h1 class="font-700">{{ $pname }}</h1>
                     <p class="font-11 mb-0"><b>Email:</b> {{ $email }}</p>
@@ -28,44 +28,43 @@
                 {{-- <img id="pictureUrl" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
                 {{-- <img src="images/pictures/0t.jpg" width="115" class="rounded-circle mt-3 shadow-xl preload-img"> --}}
             </div>
-
-            <div class="divider mt-4 mb-4"></div>
-
-            <div class="row mr-2 ml-2 mb-0">
-                <div class="col-6 text-center">
-                    <a href="{{ route('profile') }}">
-                        <i class="fa fa-address-book color-blue2-dark fa-3x"></i>
-                        <h2 class="mt-3 mb-1">Profile</h2>
-                        <p>ข้อมูลพนักงาน /เจ้าหน้าที่ของคุณ</p>
-                    </a>
-                </div>
-                <div class="col-6 text-center">
-                    <a href="{{ route('slip') }}">
-                        <i class="fa fa-print color-green1-dark fa-3x"></i>
-                        <h2 class="mt-3 mb-1">Slip</h2>
-                        <p>สลิปเงินเดือน รายรับรายจ่ายออนไลน์</p>
-                    </a>
-                </div>
-                <div class="col-6 text-center">
-                    <a href="{{ route('expenses') }}">
-                        <i class="fa fa-bold color-highlight fa-3x"></i>
-                        <h2 class="mt-3 mb-1">Expenses</h2>
-                        <p>ตรวจสอบค่าใช้จ่าย ค่าน้ำ ค่าไฟฟ้า และอื่นๆ</p>
-                    </a>
-                </div>
-                <div class="col-6 text-center">
-                    <a href="{{ route('timestamp') }}">
-                        <i class="fa fa-clock color-red2-dark fa-3x"></i>
-                        <h2 class="mt-3 mb-1">ลงเวลาทำงาน</h2>
-                        <p>บันทึกการเข้าออกเวลาทำงาน</p>
-                    </a>
-                </div>
-                <div class="col-6 text-center">
-                    <a href="#">
-                        <i class="fa fa-tasks color-blue2-dark fa-3x"></i>
-                        <h2 class="mt-3 mb-1">บริการอื่นๆ</h2>
-                        <p>บริการอื่นๆ ที่เกี่ยวกับเจ้าหน้าที่</p>
-                    </a>
+            <div class="content">
+                <div class="row mr-2 ml-2 mb-0">
+                    <div class="col-6 text-center">
+                        <a href="{{ route('profile') }}">
+                            <i class="fa fa-address-book color-blue2-dark fa-3x"></i>
+                            <h2 class="mt-3 mb-1">Profile</h2>
+                            <p>ข้อมูลพนักงาน /เจ้าหน้าที่ของคุณ</p>
+                        </a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="{{ route('slip') }}">
+                            <i class="fa fa-print color-green1-dark fa-3x"></i>
+                            <h2 class="mt-3 mb-1">Slip</h2>
+                            <p>สลิปเงินเดือน รายรับรายจ่ายออนไลน์</p>
+                        </a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="{{ route('expenses') }}">
+                            <i class="fa fa-bold color-highlight fa-3x"></i>
+                            <h2 class="mt-3 mb-1">Expenses</h2>
+                            <p>ตรวจสอบค่าใช้จ่าย ค่าน้ำ ค่าไฟฟ้า และอื่นๆ</p>
+                        </a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="{{ route('timestamp') }}">
+                            <i class="fa fa-clock color-red2-dark fa-3x"></i>
+                            <h2 class="mt-3 mb-1">ลงเวลาทำงาน</h2>
+                            <p>บันทึกการเข้าออกเวลาทำงาน</p>
+                        </a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="#">
+                            <i class="fa fa-tasks color-blue2-dark fa-3x"></i>
+                            <h2 class="mt-3 mb-1">บริการอื่นๆ</h2>
+                            <p>บริการอื่นๆ ที่เกี่ยวกับเจ้าหน้าที่</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

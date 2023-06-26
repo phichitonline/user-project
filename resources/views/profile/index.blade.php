@@ -11,7 +11,7 @@
 
     <div class="card card-style">
 
-        <div class="card-header bg-red1-dark">
+        <div class="card-header bg-blue1-dark">
             <h2 class="color-white pt-2">{{ $moduletitle }}</h2>
         </div>
         <div class="content">
