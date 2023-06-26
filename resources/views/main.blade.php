@@ -106,9 +106,6 @@
 
 @section('footer_script')
 
-
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-
 <script>
 
     async function main() {
