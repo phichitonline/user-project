@@ -19,7 +19,7 @@
 
         <div class="card card-style">
 
-            <div class="card-header bg-gray1-dark">
+            <div class="card-header bg-gray2-dark">
                 <div class="flex-grow-1">
                     <h1 class="font-700">{{ $pname }}</h1>
                     <p class="font-11 mb-0"><b>Email:</b> {{ $email }}</p>
