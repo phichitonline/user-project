@@ -6,13 +6,7 @@
 
 @section('content')
 
-<div class="header header-fixed header-logo-center bg-green2-dark">
-    <a href="#" class="header-title color-white">{{ $moduletitle }}</a>
-    <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-times"></i></a>
-    <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
-</div>
-
-    <div class="page-content header-clear-large">
+<div class="page-content header-clear-small">
 
             @if (session('session-alert'))
                 <div class="footer card card-style">
@@ -25,34 +19,37 @@
 
                 <div class="card card-style">
 
-                    <div class="card card-style">
-                        <div class="card-header bg-red2-dark">
-                            <h2 class="color-white pt-2">Ultra Compact ToDo List</h2>
-                            <p class="color-white opacity-70 mb-2">
-                                Keep only the bare minimum. The list and the checkbox.
-                            </p>
-                        </div>
-                        <div class="content mb-0">
-                            <div class="todo-list list-group list-custom-small">
-                                <a href="#">
-                                    <span>Create New Page</span>
-                                    <i class="todo-icon fa fa-check-square color-green1-dark font-16"></i>
-                                </a>
-                                <a href="#">
-                                    <span>Upgade Components</span>
-                                    <i class="todo-icon far fa-square font-16"></i>
-                                </a>
-                                <a href="#">
-                                    <span>Load Faster</span>
-                                    <i class="todo-icon far fa-square font-16"></i>
-                                </a>
-                                <a href="#" class="border-0">
-                                    <span>Release PWA Version</span>
-                                    <i class="todo-icon far fa-square font-16"></i>
-                                </a>
-                            </div>
+                    <div class="card-header bg-green1-dark">
+                        <h2 class="color-white pt-2">Compact ToDo List</h2>
+                        <p class="color-white opacity-70 mb-3">
+                            Only keep the task visible. Don't include any text or anyother info under it to keep things focused.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <div class="todo-list list-group list-custom-small ml-2">
+                            <a href="#">
+                                <i class="fa fa-check rounded-l bg-fade-green1-dark color-green1-dark font-12"></i>
+                                <span>Create New Page</span>
+                                <i class="todo-icon fa fa-check-square color-green1-dark font-16"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-cog rounded-l bg-fade-magenta1-dark color-magenta1-dark font-12"></i>
+                                <span>Upgade Components</span>
+                                <i class="todo-icon far fa-square font-16"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-bolt rounded-l bg-fade-yellow1-dark color-yellow1-dark font-12"></i>
+                                <span>Load Faster</span>
+                                <i class="todo-icon far fa-square font-16"></i>
+                            </a>
+                            <a href="#" class="border-0">
+                                <i class="fa fa-mobile-alt rounded-l bg-fade-blue2-dark color-blue2-dark font-12"></i>
+                                <span>Release PWA Version</span>
+                                <i class="todo-icon far fa-square font-16"></i>
+                            </a>
                         </div>
                     </div>
+
 
                     <div class="d-flex content mt-2 mb-2">
                         <h1><span class="color-highlight">Slip</span></h1>
