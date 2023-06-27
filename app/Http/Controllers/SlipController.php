@@ -15,13 +15,12 @@ class SlipController extends Controller
     {
         session_start();
         $cid = $_SESSION["username"];
-        // $slip_list = slip::where('ofid','501-2')->get();
 
         $slip_list = slip::select('slips.*', 'cds.cddescription','customers.tname')
         ->leftJoin('cds', 'slips.cd', '=', 'cds.cd')
         ->leftJoin('customers', 'slips.ofid', '=', 'customers.ofid')
         ->where([
-                [strtoupper(md5('customers.cid')),$cid]
+                ['customers.cid',$cid]
             ])
         ->get();
 
