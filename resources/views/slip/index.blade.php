@@ -45,7 +45,7 @@
 
     <!-- Recent Transactions Menus -->
     <div id="menu-transaction-1" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480">
-        <div class="menu-title"><h1>Payment Sent</h1><p class="color-highlight">Transaction Details for Payment</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="menu-title"><h1>รายการรับจ่าย</h1><p class="color-highlight"></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
         <div class="content">
             <div class="row mb-0">
@@ -60,6 +60,34 @@
                     <div class="d-flex">
                         <div><p class="font-700 color-theme">From</p></div>
                         <div class="ml-auto"><p> Card **** 9431</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ml-auto"><p>15th July 2025</p></div>
                     </div>
                     <div class="d-flex">
                         <div><p class="font-700 color-theme">Date</p></div>
