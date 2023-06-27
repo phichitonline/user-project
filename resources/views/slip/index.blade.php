@@ -45,70 +45,39 @@
 
     <!-- Recent Transactions Menus -->
     <div id="menu-transaction-1" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480">
-        <div class="menu-title"><h1>รายการรับจ่าย</h1><p class="color-highlight"></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="menu-title"><h1>รายการรับจ่าย</h1><p class="color-highlight">วันที่ 27 มิถุนายน 2566</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
         <div class="content">
             <div class="row mb-0">
-                <div class="col-3">
-                    <img src="images/pictures/faces/1s.png" width="80" class="rounded-xl">
-                </div>
-                <div class="col-9 pl-4">
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">To</p></div>
-                        <div class="ml-auto"><p>John Doe</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">From</p></div>
-                        <div class="ml-auto"><p> Card **** 9431</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">Date</p></div>
-                        <div class="ml-auto"><p>15th July 2025</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider mt-3 mb-3"></div>
-            <div class="row mb-0">
-                <div class="col-6"><h4 class="font-14">Type</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right">Payment Sent</h4></div>
+                <div class="col-6"><h4 class="font-14">รายรับ</h4></div>
+                <div class="col-6"><h4 class="font-14 text-right">(บาท)</h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">Amount</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1">$530.24</h4></div>
+                <div class="col-6"><h5 class="font-14 mt-1">เงินเดือน</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">Transaction ID</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1">#123-456-165</h4></div>
+                <div class="col-6"><h5 class="font-14 mt-1">โอที</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">Status</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark">Completed</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
+                <div class="col-6"><h5 class="font-14 mt-1">ตกเบิก</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h5 class="font-14 mt-1">อื่นๆ</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                
+                <div class="col-6"><h4 class="font-14">รายการหัก</h4></div>
+                <div class="col-6"><h4 class="font-14 text-right">(บาท)</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h5 class="font-14 mt-1">ค่าน้ำ</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h5 class="font-14 mt-1">ค่าไฟ</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h5 class="font-14 mt-1">ค่าตัดหญ้า</h5></div>
+                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+
                 <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-blue2-dark rounded-sm text-uppercase font-800">Download PDF</a></div>
             </div>
         </div>
