@@ -32,7 +32,7 @@ class SessionregisterController extends Controller
     public function store(Request $request, smartuser $model)
     {
         $cid = $request->get('cid');
-        $cid_encode = strtoupper(md5($request->get('cid'))).":".substr($request->get('cid'),0,1).substr($request->get('cid'),-1);
+        $cid_encode = strtoupper(md5($request->get('cid')));
 
         $bdate = $request->get('password');
         $dd = substr($bdate,0,2);
