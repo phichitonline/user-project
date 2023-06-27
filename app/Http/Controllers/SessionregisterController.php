@@ -50,7 +50,7 @@ class SessionregisterController extends Controller
                 session_start();
                 ob_start();
                 $_SESSION["lineid"] = $request->get('lineid');
-                $_SESSION["username"] = $data->cid;
+                $_SESSION["username"] = $cid_encode;
                 $_SESSION["useremail"] = $request->get('email');
                 $_SESSION["tel"] = $request->get('tel');
                 session_write_close();
