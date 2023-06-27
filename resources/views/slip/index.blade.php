@@ -45,12 +45,11 @@
 </div>
 
 <!--Menu Task Box-->
-<div id="menu-task-item" class="menu menu-box-bottom menu-box-detached rounded-l" data-menu-height="280" data-menu-effect="menu-over">
+<div id="menu-task-item" class="menu menu-box-bottom menu-box-detached rounded-l" data-menu-height="220" data-menu-effect="menu-over">
     <div class="content">
-        <div class="d-flex">
         <h5 class="bold">จัดการ</h5>
         <p class="mb-0">
-            เลือกดาวน์โหลด หรือแสดงรายการ
+            เลือกแสดงรายการ หรือดาวน์โหลดไฟล์ PDF
         </p>
         <div class="divider mt-2"></div>
         <div class="row">
