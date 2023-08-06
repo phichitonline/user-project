@@ -25,8 +25,8 @@ class SlipController extends Controller
             ])
         ->get();
 
-        // $slip_list2 = slip::groupBy('slips.datetran')
-        // ->selectRaw('slips.s_date', 'cds.cddescription','customers.tname','SUM(slips.income) AS income','SUM(slips.expense) AS expense','SUM(slips.income) - SUM(slips.expense) AS totals')
+        // $slip_list = slip::groupBy('slips.datetran')
+        // ->selectRaw('slips.datetran', 'cds.cddescription','customers.tname','SUM(slips.income) AS income','SUM(slips.expense) AS expense','SUM(slips.income) - SUM(slips.expense) AS totals')
         // ->leftJoin('cds', 'slips.cd', '=', 'cds.cd')
         // ->leftJoin('customers', 'slips.ofid', '=', 'customers.ofid')
         // ->where([
@@ -47,6 +47,40 @@ class SlipController extends Controller
             'moduletitle' => "Slip",
             'slip_list' => $slip_list,
             'slip_list2' => $slip_list2,
+        ]);
+    }
+
+    public function slipweblogin()
+    {
+        return view('slip.slipweblogin', [
+            'moduletitle' => "Slip web login",
+        ]);
+    }
+
+    public function slipweb(Request $request)
+    {
+        $cid = $request->get('cid');
+        $cid_encode = strtoupper(md5($request->get('cid')));
+        $birthday = $request->get('birthday');
+
+        $check_hosuser = DB::connection('mysql_hos')->select('
+        SELECT COUNT(*) AS userregist,cid FROM doctor
+        WHERE active = "Y" AND cid = "'.$cid.'" AND birth_date = "'.$birthday.'"
+        ');
+        foreach($check_hosuser as $data){
+            if ($data->userregist > 0) {
+                session_start();
+                ob_start();
+                $_SESSION["username"] = $cid_encode;
+                session_write_close();
+                return redirect()->route('main')->with('session-alert', 'คุณลงทะเบียนเจ้าหน้าที่เรียบร้อยแล้ว');
+            } else {
+                return redirect()->route('home')->with('session-alert', 'เลขบัตรประชาชนหรือวันเกิดไม่ถูกต้อง');
+            }
+        }
+
+        return view('slip.slipweb', [
+            'moduletitle' => "Slip web",
         ]);
     }
 

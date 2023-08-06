@@ -41,11 +41,11 @@ class SessionregisterController extends Controller
         $birthday = $yyyy."-".$mm."-".$dd;
         $birthday = trim($birthday);
 
-        $check_opduser = DB::connection('mysql_hos')->select('
+        $check_hosuser = DB::connection('mysql_hos')->select('
         SELECT COUNT(*) AS userregist,cid FROM doctor
         WHERE active = "Y" AND cid = "'.$cid.'" AND birth_date = "'.$birthday.'"
         ');
-        foreach($check_opduser as $data){
+        foreach($check_hosuser as $data){
             if ($data->userregist > 0) {
                 session_start();
                 ob_start();
