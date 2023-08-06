@@ -25,7 +25,7 @@ class SlipController extends Controller
         ->get();
 
         $slip_list2 = slip::groupBy('slips.datetran')
-        ->selectRaw('slips.*', 'cds.cddescription','customers.tname','SUM(s.income) AS income','SUM(s.expense) AS expense','SUM(s.income) - SUM(s.expense) AS totals')
+        ->selectRaw('slips.*', 'cds.cddescription','customers.tname','SUM(slips.income) AS income','SUM(slips.expense) AS expense','SUM(slips.income) - SUM(slips.expense) AS totals')
         ->leftJoin('cds', 'slips.cd', '=', 'cds.cd')
         ->leftJoin('customers', 'slips.ofid', '=', 'customers.ofid')
         ->where([
