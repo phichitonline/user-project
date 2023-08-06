@@ -49,10 +49,6 @@
         <div class="menu-title"><h1>รายการรับจ่าย</h1><p class="color-highlight">วันที่ 27 มิถุนายน 2566</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
         <div class="content mb-2">
-            <h3>Light Colorful Values</h3>
-            <p>
-                Light table with colorful values and FontAwesome Icons.
-            </p>
             <table class="table table-borderless text-center rounded-sm shadow-l" style="overflow: hidden;">
                 <thead>
                     <tr class="bg-gray1-dark">
