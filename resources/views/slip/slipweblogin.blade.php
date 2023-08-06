@@ -11,6 +11,7 @@
     <div class="card card-style">
         <div class="content mt-4 mb-0">
             <h1 class="text-center font-900 font-40 text-uppercase mb-0">Login</h1>
+            <div class="clear"><br></div>
 
             <form method="post" action="{{ route('slipweb') }}" autocomplete="off" class="form-horizontal">
                 @csrf
