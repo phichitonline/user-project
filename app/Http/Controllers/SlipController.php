@@ -61,7 +61,7 @@ class SlipController extends Controller
     {
         $cid = $request->get('cid');
         $cid_encode = strtoupper(md5($request->get('cid')));
-        
+
         $bdate = $request->get('password');
         $dd = substr($bdate,0,2);
         $mm = substr($bdate,2,2);
@@ -84,10 +84,6 @@ class SlipController extends Controller
                 return redirect()->route('slipweblogin')->with('session-alert', 'เลขบัตรประชาชนหรือวันเกิดไม่ถูกต้อง');
             }
         }
-
-        return view('slip.slipweb', [
-            'moduletitle' => "Slip web",
-        ]);
     }
 
     /**
