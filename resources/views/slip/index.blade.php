@@ -18,7 +18,7 @@
                 @forelse ($slip_list as $data)
                 <a href="#" data-menu="menu-transaction-1">
                     <i class="fa fa-list color-brown1-dark"></i>
-                    <span>{{ $data->datetran }} {{ $data->income }} {{ $data->expense }}</span>
+                    <span>{{ DateThaiShortYY($data->datetran) }} {{ $data->income }} {{ $data->expense }}</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 @empty
@@ -64,7 +64,7 @@
                 <div class="col-6"><h5 class="font-14 mt-1">อื่นๆ</h5></div>
                 <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                
+
                 <div class="col-6"><h4 class="font-14">รายการหัก</h4></div>
                 <div class="col-6"><h4 class="font-14 text-right">(บาท)</h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
