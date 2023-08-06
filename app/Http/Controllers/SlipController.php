@@ -39,7 +39,7 @@ class SlipController extends Controller
         FROM slips s
         LEFT JOIN cds c ON s.cd = c.cd
         LEFT JOIN customers m ON s.ofid = m.ofid
-        WHERE m.cid = '.$cid.'
+        WHERE m.cid = "'.$cid.'"
         GROUP BY s.datetran
         ');
 
