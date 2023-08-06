@@ -35,7 +35,7 @@ class SlipController extends Controller
         // ->get();
 
         $slip_list2 = DB::connection('mysql')->select('
-        SELECT s.s_date,s.s_time,SUM(s.income) AS income,SUM(s.expense) AS expense,SUM(s.income) - SUM(s.expense) AS totals
+        SELECT DATE_FORMAT(s.datetran,"%Y-%m-%d") AS s_date,DATE_FORMAT(s.datetran,"%H:%m:%s") AS s_time,SUM(s.income) AS income,SUM(s.expense) AS expense,SUM(s.income) - SUM(s.expense) AS totals
         FROM slips s
         LEFT JOIN cds c ON s.cd = c.cd
         LEFT JOIN customers m ON s.ofid = m.ofid
@@ -47,7 +47,6 @@ class SlipController extends Controller
             'moduletitle' => "Slip",
             'slip_list' => $slip_list,
             'slip_list2' => $slip_list2,
-            'cid' => $cid,
         ]);
     }
 

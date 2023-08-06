@@ -16,14 +16,12 @@ return new class extends Migration
             $table->charset = 'utf8';
             $table->collation = 'utf8_general_ci';
             $table->id();
-            $table->string('username');
-            $table->string('password');
-            $table->string('ecid')->comment('เลขบัตรประชาชน encode');
-            $table->string('ofid')->nullable()->comment('รหัสพนักงาน');
+            $table->string('username', 100)->comment('ชื่อผู้ใช้ (เลขบัตรประชาชน encode)');
+            $table->string('password')->comment('รหัสผ่าน (วันเดือนปีเกิด)');
             $table->string('lineid')->comment('ไลน์ไอดี');
             $table->string('email')->nullable()->comment('อีเมล์');
-            $table->string('tel')->comment('เบอร์โทรศัพท์');
-            $table->string('isadmin', 1)->comment('ระดับผู้ใช้งาน');
+            $table->string('tel')->nullable()->comment('เบอร์โทรศัพท์');
+            $table->string('isadmin', 1)->nullable()->comment('ระดับผู้ใช้งาน');
             $table->string('consent', 1)->nullable()->comment('ความยินยอม');
             $table->string('pincode', 100)->nullable()->comment('รหัส Pin');
             $table->timestamps();

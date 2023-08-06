@@ -16,12 +16,11 @@ return new class extends Migration
             $table->charset = 'utf8';
             $table->collation = 'utf8_general_ci';
             $table->id();
-            $table->string('dp')->comment('รหัสหน่วยงาน');
             $table->string('ofid')->comment('รหัสพนักงาน');
             $table->string('cd')->comment('รหัสรายรับรายจ่าย');
             $table->string('qty')->nullable()->comment('จำนวน');
             $table->double('income', 20, 2)->nullable()->comment('รายรับ');
-            $table->double('expense', 20, 2)->nullable()->comment('รายการหัก');
+            $table->double('expense', 20, 2)->nullable()->comment('รายจ่าย');
             $table->dateTime('datetran')->comment('วันเวลาที่ทำรายการ');
             $table->timestamps();
         });
