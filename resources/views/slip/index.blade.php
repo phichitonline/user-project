@@ -11,11 +11,11 @@
     <div class="card card-style">
 
         <div class="card-header bg-green1-dark">
-            <h2 class="color-white pt-2">{{ $moduletitle }} {{ $cid }}</h2>
+            <h2 class="color-white pt-2">{{ $moduletitle }}</h2>
         </div>
         <div class="content my-0">
             <div class="list-group list-custom-small">
-                @forelse ($slip_list as $data)
+                @forelse ($slip_list2 as $data)
                 <a href="#" data-menu="menu-transaction-1">
                     <i class="fa fa-list color-brown1-dark"></i>
                     {{-- <span>{{ DateThaiShortYY($data->datetran) }} {{ $data->income }} {{ $data->expense }}</span> --}}
