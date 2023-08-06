@@ -30,13 +30,13 @@
                     <i class="input-icon fa fa-user color-theme"></i>
                     <span>เลขบัตรประชาชน</span>
                     <em>(required)</em>
-                    <input name="cid" type="number" placeholder="เลขบัตรประชาชน">
+                    <input name="cid" type="number" placeholder="เลขบัตรประชาชน" required>
                 </div>
                 <div class="input-style has-icon input-style-1 input-required pb-1">
                     <i class="input-icon fa fa-lock color-theme"></i>
                     <span>วันเดือนปีเกิด</span>
                     <em>(required)</em>
-                    <input name="password" type="number" placeholder="ววดดปปปป (ปี พ.ศ.) 31122530">
+                    <input name="password" type="number" placeholder="ววดดปปปป (ปี พ.ศ.) 31122530" required>
                 </div>
 
                 <button type="submit" class="btn scale-box btn-m mt-2 mb-4 btn-center-l rounded-l shadow-xl bg-green1-dark font-800 text-white  text-uppercase">Login</button>
