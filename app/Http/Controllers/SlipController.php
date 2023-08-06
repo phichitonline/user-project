@@ -27,6 +27,7 @@ class SlipController extends Controller
         return view('slip.index', [
             'moduletitle' => "Slip",
             'slip_list' => $slip_list,
+            'cid' => $cid,
         ]);
     }
 
