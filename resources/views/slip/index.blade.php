@@ -41,8 +41,8 @@
                 <thead>
                     <tr class="bg-gray1-dark">
                         <th scope="col" class="color-theme text-center">รายการ</th>
-                        <th scope="col" class="color-theme text-center">รายรับ</th>
-                        <th scope="col" class="color-theme text-center">รายจ่าย</th>
+                        <th scope="col" class="color-theme text-right">รายรับ</th>
+                        <th scope="col" class="color-theme text-right">รายจ่าย</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,28 +53,28 @@
                     </tr>
                     <tr>
                         <th scope="row">ประกันสังคม</th>
-                        <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">750.00</td>
+                        <td class="color-green1-dark text-right"></td>
+                        <td class="color-red2-dark text-right">750.00</td>
                     </tr>
                     <tr>
                         <th scope="row">ร้านค้าสวัสดิการ รพ.</th>
-                        <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">676.00</td>
+                        <td class="color-green1-dark text-right"></td>
+                        <td class="color-red2-dark text-right">676.00</td>
                     </tr>
                     <tr>
                         <th scope="row">ฌกส.</th>
-                        <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">382.00</td>
+                        <td class="color-green1-dark text-right"></td>
+                        <td class="color-red2-dark text-right">382.00</td>
                     </tr>
                     <tr>
                         <th scope="row">สหกรณ์ สสจ.</th>
-                        <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">2,050.00</td>
+                        <td class="color-green1-dark text-right"></td>
+                        <td class="color-red2-dark text-right">2,050.00</td>
                     </tr>
                     <tr>
                         <th scope="row">ธนาคารออมสิน</th>
                         <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">3,584.00</td>
+                        <td class="color-red2-dark text-right">3,584.00</td>
                     </tr>
                 </tbody>
                 <thead>
