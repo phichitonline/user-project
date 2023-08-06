@@ -73,7 +73,7 @@
                     </tr>
                     <tr>
                         <th scope="row">ธนาคารออมสิน</th>
-                        <td class="color-green1-dark"></td>
+                        <td class="color-green1-dark text-right"></td>
                         <td class="color-red2-dark text-right">3,584.00</td>
                     </tr>
                 </tbody>
@@ -81,7 +81,7 @@
                     <tr class="bg-gray1-dark">
                         <th scope="col" class="color-theme">คงเหลือ</th>
                         <th scope="col" class="color-theme"></th>
-                        <th scope="col" class="color-blue2-dark">8,168.00</th>
+                        <th scope="col" class="color-blue2-dark text-right">8,168.00</th>
                     </tr>
                 </thead>
             </table>
