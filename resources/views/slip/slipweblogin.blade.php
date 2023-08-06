@@ -8,6 +8,15 @@
 
 <div class="page-content header-clear-small">
 
+    @if (session('session-alert'))
+        <div class="footer card card-style">
+            <a href="#" class="footer-title"><span class="color-highlight">{{ session('session-alert') }}</span></a>
+            <div class="clear"><br></div>
+        </div><br>
+    @else
+
+    @endif
+
     <div class="card card-style">
         <div class="content mt-4 mb-0">
             <h1 class="text-center font-900 font-40 text-uppercase mb-0">Login</h1>
