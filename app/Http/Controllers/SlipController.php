@@ -61,7 +61,13 @@ class SlipController extends Controller
     {
         $cid = $request->get('cid');
         $cid_encode = strtoupper(md5($request->get('cid')));
-        $birthday = $request->get('birthday');
+        
+        $bdate = $request->get('password');
+        $dd = substr($bdate,0,2);
+        $mm = substr($bdate,2,2);
+        $yyyy = substr($bdate,4,4)-543;
+        $birthday = $yyyy."-".$mm."-".$dd;
+        $birthday = trim($birthday);
 
         $check_hosuser = DB::connection('mysql_hos')->select('
         SELECT COUNT(*) AS userregist,cid FROM doctor

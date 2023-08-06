@@ -30,7 +30,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/main', [MainController::class, 'index'])->name('main');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/slip', [SlipController::class, 'index'])->name('slip');
-Route::get('/slipweb', [SlipController::class, 'slipweb'])->name('slipweb');
+Route::post('/slipweb', [SlipController::class, 'slipweb'])->name('slipweb');
 Route::get('/slipweblogin', [SlipController::class, 'slipweblogin'])->name('slipweblogin');
 Route::get('/expenses', [ExpensesController::class, 'index'])->name('expenses');
 Route::get('/timestamp', [TimestampController::class, 'index'])->name('timestamp');
