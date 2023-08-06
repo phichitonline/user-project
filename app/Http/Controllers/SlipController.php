@@ -36,13 +36,10 @@ class SlipController extends Controller
 
         $slip_list2 = DB::connection('mysql')->select('
         SELECT s.s_date,s.s_time,SUM(s.income) AS income,SUM(s.expense) AS expense,SUM(s.income) - SUM(s.expense) AS totals
-
         FROM slips s
         LEFT JOIN cds c ON s.cd = c.cd
         LEFT JOIN customers m ON s.ofid = m.ofid
-
         WHERE m.cid = '.$cid.'
-
         GROUP BY s.datetran
         ');
 
