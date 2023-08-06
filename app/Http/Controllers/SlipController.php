@@ -73,9 +73,9 @@ class SlipController extends Controller
                 ob_start();
                 $_SESSION["username"] = $cid_encode;
                 session_write_close();
-                return redirect()->route('main')->with('session-alert', 'คุณลงทะเบียนเจ้าหน้าที่เรียบร้อยแล้ว');
+                return redirect()->route('slip');
             } else {
-                return redirect()->route('home')->with('session-alert', 'เลขบัตรประชาชนหรือวันเกิดไม่ถูกต้อง');
+                return redirect()->route('slipweblogin')->with('session-alert', 'เลขบัตรประชาชนหรือวันเกิดไม่ถูกต้อง');
             }
         }
 
