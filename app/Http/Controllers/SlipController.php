@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\slip;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
@@ -84,6 +85,31 @@ class SlipController extends Controller
                 return redirect()->route('slipweblogin')->with('session-alert', 'เลขบัตรประชาชนหรือวันเกิดไม่ถูกต้อง');
             }
         }
+    }
+
+    public function generatePDF()
+    {
+        session_start();
+        $cid = $_SESSION["username"];
+        
+        $slip = DB::connection('mysql')->select('
+        SELECT DATE_FORMAT(s.datetran,"%Y-%m-%d") AS s_date,DATE_FORMAT(s.datetran,"%H:%m:%s") AS s_time,SUM(s.income) AS income,SUM(s.expense) AS expense,SUM(s.income) - SUM(s.expense) AS totals
+        FROM slips s
+        LEFT JOIN cds c ON s.cd = c.cd
+        LEFT JOIN customers m ON s.ofid = m.ofid
+        WHERE m.cid = "'.$cid.'"
+        GROUP BY s.datetran
+        ');
+
+        $data = [
+            'title' => 'รายการรับจ่าย รพร.ตะพานหิน ของ นายณัฐพงศ์ เครือเทศ',
+            'date' => "14 มิ.ย.66 15.06 น.",
+            'slip' => $slip
+        ];
+
+        $pdf = PDF::loadView('slip.slipPDF', $data);
+
+        return $pdf->download('slip_2023-06-14_1506.pdf');
     }
 
     /**

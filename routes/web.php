@@ -32,5 +32,6 @@ Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/slip', [SlipController::class, 'index'])->name('slip');
 Route::post('/slipweb', [SlipController::class, 'slipweb'])->name('slipweb');
 Route::get('/slipweblogin', [SlipController::class, 'slipweblogin'])->name('slipweblogin');
+Route::get('/generatepdf', [SlipController::class, 'generatePDF'])->name('generatepdf');
 Route::get('/expenses', [ExpensesController::class, 'index'])->name('expenses');
 Route::get('/timestamp', [TimestampController::class, 'index'])->name('timestamp');
