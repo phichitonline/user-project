@@ -59,26 +59,41 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">เงินโอที</th>
-                        <td class="color-green1-dark">1,500</td>
+                        <th scope="row">เงินเดือน</th>
+                        <td class="color-green1-dark">15,610.00</td>
                         <td class="color-red2-dark"></td>
                     </tr>
                     <tr>
-                        <th scope="row">ค่าไฟ</th>
+                        <th scope="row">ประกันสังคม</th>
                         <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">800</td>
+                        <td class="color-red2-dark">750.00</td>
                     </tr>
                     <tr>
-                        <th scope="row">ค่าน้ำ</th>
+                        <th scope="row">ร้านค้าสวัสดิการ รพ.</th>
                         <td class="color-green1-dark"></td>
-                        <td class="color-red2-dark">100</td>
+                        <td class="color-red2-dark">676.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ฌกส.</th>
+                        <td class="color-green1-dark"></td>
+                        <td class="color-red2-dark">382.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">สหกรณ์ สสจ.</th>
+                        <td class="color-green1-dark"></td>
+                        <td class="color-red2-dark">2,050.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ธนาคารออมสิน</th>
+                        <td class="color-green1-dark"></td>
+                        <td class="color-red2-dark">3,584.00</td>
                     </tr>
                 </tbody>
                 <thead>
                     <tr class="bg-gray1-dark">
                         <th scope="col" class="color-theme">คงเหลือ</th>
                         <th scope="col" class="color-theme"></th>
-                        <th scope="col" class="color-blue2-dark">600</th>
+                        <th scope="col" class="color-blue2-dark">8,168.00</th>
                     </tr>
                 </thead>
             </table>
