@@ -80,6 +80,9 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-blue2-dark rounded-sm text-uppercase font-800">Download PDF</a></div>
+
     </div>
 
 @endsection
