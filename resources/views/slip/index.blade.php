@@ -52,28 +52,35 @@
             <table class="table table-borderless text-center rounded-sm shadow-l" style="overflow: hidden;">
                 <thead>
                     <tr class="bg-gray1-dark">
-                        <th scope="col" class="color-theme">Brand</th>
-                        <th scope="col" class="color-theme">Device</th>
-                        <th scope="col" class="color-theme">Status</th>
+                        <th scope="col" class="color-theme">รายการ</th>
+                        <th scope="col" class="color-theme">รายรับ</th>
+                        <th scope="col" class="color-theme">รายจ่าย</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Apple</th>
-                        <td class="color-green1-dark">$500</td>
-                        <td><i class="fa fa-arrow-up rotate-45 color-green1-dark"></i></td>
+                        <th scope="row">เงินโอที</th>
+                        <td class="color-green1-dark">1,500</td>
+                        <td class="color-red2-dark"></td>
                     </tr>
                     <tr>
-                        <th scope="row">Android</th>
-                        <td class="color-yellow1-dark">$400</td>
-                        <td><i class="fa fa-arrow-right rotate-45 color-yellow1-dark"></i></td>
+                        <th scope="row">ค่าไฟ</th>
+                        <td class="color-green1-dark"></td>
+                        <td class="color-red2-dark">800</td>
                     </tr>
                     <tr>
-                        <th scope="row">Nope</th>
-                        <td class="color-red2-dark">$300</td>
-                        <td><i class="fa fa-arrow-right rotate-90 color-red2-dark"></i></td>
+                        <th scope="row">ค่าน้ำ</th>
+                        <td class="color-green1-dark"></td>
+                        <td class="color-red2-dark">100</td>
                     </tr>
                 </tbody>
+                <thead>
+                    <tr class="bg-gray1-dark">
+                        <th scope="col" class="color-theme">คงเหลือ</th>
+                        <th scope="col" class="color-theme"></th>
+                        <th scope="col" class="color-blue2-dark">600</th>
+                    </tr>
+                </thead>
             </table>
         </div>
 
