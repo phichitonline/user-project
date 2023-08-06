@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\slip;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
 class SlipController extends Controller
@@ -24,14 +25,26 @@ class SlipController extends Controller
             ])
         ->get();
 
-        $slip_list2 = slip::groupBy('slips.datetran')
-        ->selectRaw('slips.s_date', 'cds.cddescription','customers.tname','SUM(slips.income) AS income','SUM(slips.expense) AS expense','SUM(slips.income) - SUM(slips.expense) AS totals')
-        ->leftJoin('cds', 'slips.cd', '=', 'cds.cd')
-        ->leftJoin('customers', 'slips.ofid', '=', 'customers.ofid')
-        ->where([
-                ['customers.cid',$cid]
-            ])
-        ->get();
+        // $slip_list2 = slip::groupBy('slips.datetran')
+        // ->selectRaw('slips.s_date', 'cds.cddescription','customers.tname','SUM(slips.income) AS income','SUM(slips.expense) AS expense','SUM(slips.income) - SUM(slips.expense) AS totals')
+        // ->leftJoin('cds', 'slips.cd', '=', 'cds.cd')
+        // ->leftJoin('customers', 'slips.ofid', '=', 'customers.ofid')
+        // ->where([
+        //         ['customers.cid',$cid]
+        //     ])
+        // ->get();
+
+        $slip_list2 = DB::connection('mysql')->select('
+        SELECT s.s_date,s.s_time,SUM(s.income) AS income,SUM(s.expense) AS expense,SUM(s.income) - SUM(s.expense) AS totals
+
+        FROM slips s
+        LEFT JOIN cds c ON s.cd = c.cd
+        LEFT JOIN customers m ON s.ofid = m.ofid
+
+        WHERE m.cid = '.$cid.'
+
+        GROUP BY s.datetran
+        ');
 
         return view('slip.index', [
             'moduletitle' => "Slip",

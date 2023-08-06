@@ -19,7 +19,7 @@
                 <a href="#" data-menu="menu-transaction-1">
                     <i class="fa fa-list color-brown1-dark"></i>
                     {{-- <span>{{ DateThaiShortYY($data->datetran) }} {{ $data->income }} {{ $data->expense }}</span> --}}
-                    <span>{{ DateThaiShortYY($data->s_date) }} {{ $data->income }} {{ $data->expense }}</span>
+                    <span>{{ DateThaiShortYY($data->s_date) }} {{ $data->s_time }} : {{ $data->totals }}</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 @empty
