@@ -48,39 +48,37 @@
     <div id="menu-transaction-1" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480">
         <div class="menu-title"><h1>รายการรับจ่าย</h1><p class="color-highlight">วันที่ 27 มิถุนายน 2566</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
-        <div class="content">
-            <div class="row mb-0">
-                <div class="col-6"><h4 class="font-14">รายรับ</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right">(บาท)</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">เงินเดือน</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">โอที</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">ตกเบิก</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">อื่นๆ</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-
-                <div class="col-6"><h4 class="font-14">รายการหัก</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right">(บาท)</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">ค่าน้ำ</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">ค่าไฟ</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h5 class="font-14 mt-1">ค่าตัดหญ้า</h5></div>
-                <div class="col-6"><h5 class="font-14 text-right mt-1">35,330</h5></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-
-                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-blue2-dark rounded-sm text-uppercase font-800">Download PDF</a></div>
-            </div>
+        <div class="content mb-2">
+            <h3>Light Colorful Values</h3>
+            <p>
+                Light table with colorful values and FontAwesome Icons.
+            </p>
+            <table class="table table-borderless text-center rounded-sm shadow-l" style="overflow: hidden;">
+                <thead>
+                    <tr class="bg-gray1-dark">
+                        <th scope="col" class="color-theme">Brand</th>
+                        <th scope="col" class="color-theme">Device</th>
+                        <th scope="col" class="color-theme">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Apple</th>
+                        <td class="color-green1-dark">$500</td>
+                        <td><i class="fa fa-arrow-up rotate-45 color-green1-dark"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Android</th>
+                        <td class="color-yellow1-dark">$400</td>
+                        <td><i class="fa fa-arrow-right rotate-45 color-yellow1-dark"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nope</th>
+                        <td class="color-red2-dark">$300</td>
+                        <td><i class="fa fa-arrow-right rotate-90 color-red2-dark"></i></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
