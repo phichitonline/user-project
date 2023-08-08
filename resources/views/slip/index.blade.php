@@ -41,8 +41,8 @@
                 <thead>
                     <tr class="bg-gray1-dark">
                         <th scope="col" class="color-theme text-center">รายการ</th>
-                        <th scope="col" class="color-theme text-right">รายรับ</th>
-                        <th scope="col" class="color-theme text-right">รายจ่าย</th>
+                        <th scope="col" class="color-theme text-right">รายได้</th>
+                        <th scope="col" class="color-theme text-right">รายการหัก</th>
                     </tr>
                 </thead>
                 <tbody>

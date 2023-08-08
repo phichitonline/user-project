@@ -6,7 +6,6 @@
 
 @section('content')
 
-<div id="menu-transaction-1" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480">
     <div class="menu-title"><h1>รายการรับจ่าย</h1><p class="color-highlight">14 มิ.ย.66 15.06 น.</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
     <div class="divider divider-margins mb-1 mt-3"></div>
     <div class="content mb-2">
@@ -61,7 +60,6 @@
     </div>
 
 
-</div>
 
 
 @endsection
